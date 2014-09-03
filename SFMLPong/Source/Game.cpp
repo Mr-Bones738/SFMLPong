@@ -1,7 +1,7 @@
 #include "Game.h"
 
 bool Game::init(){
-	sf::RenderWindow window(sf::VideoMode(1000, 500), "420 bonglord yolo", sf::Style::Titlebar+sf::Style::Close);
+	sf::RenderWindow window(sf::VideoMode(1000, 500), "SFML Pong", sf::Style::Titlebar+sf::Style::Close);
 	window.setFramerateLimit(60);
 	menu = new Menu; // Menu.h Menu.cpp
 	menu->init(&window);
