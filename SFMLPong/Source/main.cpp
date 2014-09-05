@@ -1,7 +1,5 @@
 /*  PONG CLONE 
-	Uses SFML
-	Give your compiler the 32 bit dynamic libraries and includes
-	Give the exe the DLLs
+	Uses SFML (Believe it or not)
 */
 
 
