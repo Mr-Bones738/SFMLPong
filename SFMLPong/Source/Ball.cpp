@@ -8,9 +8,11 @@ bool Ball::init(sf::RenderWindow *window){
 		return false;
 	}
 	speed = sf::Vector2f(0.f, 0.f);
-	tx_ball.loadFromFile("Assets/ball.png");
-	buf_beep.loadFromFile("Assets/beep.ogg");
-	buf_boop.loadFromFile("Assets/boop.ogg");
+	if(!tx_ball.loadFromFile("Assets/ball.png")||
+	!buf_beep.loadFromFile("Assets/beep.ogg")||
+	!buf_boop.loadFromFile("Assets/boop.ogg")){
+		return false;	
+	}
 	beep.setBuffer(buf_beep);
 	boop.setBuffer(buf_boop);
 	tx_ball.setSmooth(false);
