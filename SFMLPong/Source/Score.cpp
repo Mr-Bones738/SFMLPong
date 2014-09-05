@@ -16,6 +16,7 @@ void Score::init(){
 }
 
 void Score::render(sf::RenderWindow *window){
+	// There has to be a better way of doing this, right?
 	std::ostringstream convert;
 	convert << player2score;
 	str_player2score = convert.str();
