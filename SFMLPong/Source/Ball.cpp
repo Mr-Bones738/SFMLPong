@@ -15,8 +15,8 @@ bool Ball::init(sf::RenderWindow *window){
 	boop.setBuffer(buf_boop);
 	tx_ball.setSmooth(false);
 	sp_ball.setTexture(tx_ball);
-	sp_ball.setOrigin(sf::Vector2f(16.f,16.f));
-	sp_ball.setPosition(sf::Vector2f(500.f, 250.f));
+	sp_ball.setOrigin(sf::Vector2f(sp_ball.getSize().x/2,sp_ball.getSize().x));
+	sp_ball.setPosition(sf::Vector2f(window->getSize().x / 2, window->getSize().y / 2));
 	return true;
 }
 
