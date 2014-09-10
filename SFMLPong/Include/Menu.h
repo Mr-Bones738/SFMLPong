@@ -1,5 +1,5 @@
-#ifndef H_MENU
-#define H_MENU
+#ifndef _H_MENU
+#define _H_MENU
 #include <SFML/Graphics.hpp>
 
 class Menu{
