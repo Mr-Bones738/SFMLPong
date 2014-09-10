@@ -1,5 +1,5 @@
-#ifndef H_PADDLE
-#define H_PADDLE
+#ifndef _H_PADDLE
+#define _H_PADDLE
 
 #include <SFML/Graphics.hpp>
 
