@@ -5,8 +5,7 @@
 
 #include "Game.h"
 
-int main()
-{
+int main(int argc, char** argv){
 	Game *game = new Game;
 	if (!game->init()){
 		return -1;
