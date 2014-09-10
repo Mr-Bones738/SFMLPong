@@ -1,5 +1,5 @@
-#ifndef H_BALL
-#define H_BALL
+#ifndef _H_BALL
+#define _H_BALL
 #include <SFML/Graphics.hpp>
 #include "Paddle.h"
 #include "Score.h"
