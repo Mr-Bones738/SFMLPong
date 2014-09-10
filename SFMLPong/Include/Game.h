@@ -1,5 +1,5 @@
-#ifndef H_GAME
-#define H_GAME
+#ifndef _H_GAME
+#define _H_GAME
 
 #include <SFML/Graphics.hpp>
 #include "Ball.h"
