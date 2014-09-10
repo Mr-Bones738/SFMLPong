@@ -1,5 +1,5 @@
-#ifndef H_SCORE
-#define H_SCORE
+#ifndef _H_SCORE
+#define _H_SCORE
 
 #include <SFML/Graphics.hpp>
 
