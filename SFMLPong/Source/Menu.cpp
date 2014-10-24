@@ -6,7 +6,7 @@ bool Menu::init(sf::RenderWindow *window){
 	controls_player1.setFont(font);
 	controls_player2.setFont(font);
 	controls_game.setFont(font);
-	title.setString(sf::String("420 PONG"));
+	title.setString(sf::String("PONG"));
 	controls_player1.setString(sf::String("Player 1 uses W and S."));
 	controls_player2.setString(sf::String("Player 2 uses Arrow Keys"));
 	controls_game.setString(sf::String("Press enter/return to get rid of this screen and space to start the ball..."));
