@@ -15,13 +15,13 @@ bool Game::init(){
 		window.close();
 		return false;
 	}
-	player1->sp_paddle.setPosition(player1->sp_paddle.getScale().x/2, window.getSize().y / 2.f);
+	player1->sp_paddle.setPosition(8, 250);
 	player2 = new Paddle;
 	if (!player2->init(&window)){
 		window.close();
 		return false;
 	}
-	player2->sp_paddle.setPosition(window.getSize().x-(player1->sp_paddle.getScale().x/2), window.getSize().y / 2.f);
+	player2->sp_paddle.setPosition(1000-8, 250);
 	if (!ball->init(&window)){
 		window.close();
 		return false;

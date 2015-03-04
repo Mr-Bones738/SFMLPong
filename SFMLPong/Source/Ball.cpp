@@ -17,8 +17,8 @@ bool Ball::init(sf::RenderWindow *window){
 	boop.setBuffer(buf_boop);
 	tx_ball.setSmooth(false);
 	sp_ball.setTexture(tx_ball);
-	sp_ball.setOrigin(sf::Vector2f(sp_ball.getScale().x/2,sp_ball.getScale().x));
-	sp_ball.setPosition(sf::Vector2f(window->getScale().x / 2, window->getScale().y / 2));
+	sp_ball.setOrigin(sf::Vector2f(16,16));
+	sp_ball.setPosition(sf::Vector2f(500,250));
 	return true;
 }
 
@@ -36,12 +36,12 @@ void Ball::update(sf::RenderWindow *window, Paddle *paddle, Paddle *paddle2, Sco
 	float ballrightedge = sp_ball.getPosition().x + 16;
 	float ballleftedge = sp_ball.getPosition().x - 16;
 
-	if (sp_ball.getPosition().y + 16 > 500 || sp_ball.getPosition().y - 16 < 1){
+	if (balltopedge > 500 || ballbottomedge < 1){
 		boop.play();
 	speedy = speedy * -1.f;
 		speed = sf::Vector2f(speedx, speedy);
 	}
-	if (sp_ball.getPosition().x - 16 < 1){
+	if (ballleftedge < 1){
 		srand(time(NULL));
 		speedx = rand() % 5+1;
 		speedy = rand() % 5+0.1f;
@@ -49,7 +49,7 @@ void Ball::update(sf::RenderWindow *window, Paddle *paddle, Paddle *paddle2, Sco
 		sp_ball.setPosition(sf::Vector2f(500.f, 250.f));
 		score->player2score++;
 	}
-	if (sp_ball.getPosition().x + 16 > 1000){
+	if (ballrightedge > 1000){
 		srand(time(NULL));
 		speedx = rand() % 5 + 1;
 		speedy = rand() % 5 + 0.1f;

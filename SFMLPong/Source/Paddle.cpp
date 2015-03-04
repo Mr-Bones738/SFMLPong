@@ -6,7 +6,7 @@ bool Paddle::init(sf::RenderWindow *window){
 	}
 	tx_paddle.setSmooth(false);
 	sp_paddle.setTexture(tx_paddle);
-	sp_paddle.setOrigin(8, 64);
+	sp_paddle.setOrigin(8,64);
 	return true;
 }
 
