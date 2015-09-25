@@ -6,6 +6,7 @@
 #include "Game.h"
 
 int main(int argc, char** argv){
+	char ayy[] = "ayy lmao";
 	Game *game = new Game;
 	if (!game->init()){
 		return -1;
