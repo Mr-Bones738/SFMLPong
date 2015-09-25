@@ -1,4 +1,4 @@
 SFMLPong
 ========
 
-Now it works with a static SFML. Should work in Linux, untested.
+Probably the worst game of Pong ever written
